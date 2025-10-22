@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LinkForge Technologies — Building modern websites & smart digital tools</title>
+  <meta name="description" content="LinkForge Technologies builds modern websites and custom QR solutions. Owner: Fayaaz Cassim. Based in South Africa, serving clients worldwide." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <!-- inline SVG Logo -->
+      <svg class="logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="LinkForge Technologies">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#00b4ff"/>
+            <stop offset="1" stop-color="#00ffb8"/>
+          </linearGradient>
+        </defs>
+        <rect x="6" y="6" width="108" height="108" rx="18" fill="#041226" stroke="url(#g)" stroke-width="5"/>
+        <path d="M36 74 L56 46 L86 62" stroke="url(#g)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <div>
+        <div class="company">LinkForge Technologies</div>
+        <div class="sub">Building modern websites and smart digital tools.</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Websites & branded QR codes that connect your customers instantly.</h1>
+        <p class="lead">Hi — I'm <strong>Fayaaz Cassim</strong>. I design clean, fast websites and custom QR solutions for small businesses and creators. Based in South Africa — serving clients worldwide.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#services">See services</a>
+          <a class="btn outline" href="contact.html">Request quote</a>
+        </div>
+        <ul class="quick">
+          <li><strong>Phone / WhatsApp:</strong> <a href="tel:+27648807233">+27 64 880 7233</a></li>
+          <li><strong>Email:</strong> <a href="mailto:fayaazcassim532@gmail.com">fayaazcassim532@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="hero-right card">
+        <img src="images/hero.jpg" onerror="this.src='https://picsum.photos/800/520?seed=linkforge1'" alt="LinkForge sample" />
+        <div class="card-body">
+          <h4>Sample project — Landing page + QR code</h4>
+          <p>We deliver the landing page your QR code points to (vCard, menu, promo) and provide print-ready QR art with your brand.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About LinkForge Technologies</h2>
+        <p>LinkForge Technologies is a small web studio founded by <strong>Fayaaz Cassim</strong>. We help local businesses get a polished online presence — fast, affordable, and mobile-ready.</p>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="service-card">
+          <h3>Website Design</h3>
+          <p>Responsive, fast company sites and landing pages built to convert. We deploy to GitHub Pages or Netlify for reliable hosting.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>QR Code Creation</h3>
+          <p>Branded QR codes (logo embedded), dynamic links, analytics-ready landing pages, and print-ready assets for menus, vCards, or promos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="work container">
+      <h2>Recent Work</h2>
+      <div class="work-grid">
+        <img src="images/work1.jpg" alt="project 1" onerror="this.src='https://picsum.photos/560/360?seed=linkforge2'">
+        <img src="images/work2.jpg" alt="project 2" onerror="this.src='https://picsum.photos/560/360?seed=linkforge3'">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>LinkForge Technologies</strong><br>
+        <small>Owned by Fayaaz Cassim • Based in South Africa — services worldwide</small>
+      </div>
+      <div class="footer-contact">
+        <div><a href="mailto:fayaazcassim532@gmail.com">fayaazcassim532@gmail.com</a></div>
+        <div><a href="tel:+27648807233">+27 64 880 7233</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href = a.getAttribute('href');
+        if(href.length > 1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
